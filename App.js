@@ -9,8 +9,8 @@ import {
 } from "react-native";
 import { Permissions, Notifications } from "expo";
 
-const PUSH_REGISTRATION_ENDPOINT = "http://generated-ngrok-url/token";
-const MESSAGE_ENDPOINT = "http://generated-ngrok-url/message";
+const PUSH_REGISTRATION_ENDPOINT = "http://9bbe4f64.ngrok.io/token";
+const MESSAGE_ENDPOINT = "http://9bbe4f64.ngrok.io/message";
 
 export default class App extends React.Component {
   state = {
@@ -72,6 +72,11 @@ export default class App extends React.Component {
   componentDidMount() {
     this.registerForPushNotificationsAsync();
   }
+
+
+
+
+
 
   render() {
     return (
